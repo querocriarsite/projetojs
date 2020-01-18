@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <title>Login</title>
     <!-- Required meta tags -->
@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="css/singin.css" rel="stylesheet">
 </head>
@@ -18,16 +20,23 @@
         <div class="offset-md-3 col-md-6">
             <form class="form-signin">
                 <img alt="" class="mb-4 mx-auto d-block" height="144" src="img/login_avatar.png" width="144">
-                <label class="sr-only" for="inputEmail">Login</label>
-                <input autofocus class="form-control" id="inputEmail" placeholder="Login" required type="email">
-                <label class="sr-only" for="inputPassword">Password</label>
-                <input class="form-control" id="inputPassword" placeholder="Password" required type="password">
+
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input autofocus class="form-control input-estilo" id="inputEmail" placeholder="Usuário" required type="email">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                    <input class="form-control input-estilo" id="inputPassword" placeholder="Senha" required type="password">
+                </div>
+
                 <div class="checkbox mb-3">
                     <label>
-                        <input type="checkbox" value="remember-me"> Remember me
+                        <input type="checkbox" value="remember-me"> Esqueci a senha
                     </label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <button class="btn btn-lg btn-primary btn-block estilo-botao-login" type="submit"><i class="fa fa-key"></i> Acessar</button>
             </form>
         </div>
     </div>
